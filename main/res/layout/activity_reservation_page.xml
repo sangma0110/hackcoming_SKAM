@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservationPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/pingu"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginRight="130dp"
+                android:background="@drawable/pingu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pingu"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="137dp"
+                android:layout_marginRight="137dp"
+                android:hint="Confimration"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_margin="15dp">
+
+            <!--> Location -->
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_location"
+                android:background="@drawable/ic_location"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_location"
+                android:layout_alignStart="@+id/ic_location"
+                android:hint="Location"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp"
+                android:layout_alignLeft="@+id/ic_location"
+                android:layout_marginLeft="50dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/text_location"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/divider_location"/>
+
+            <!--> Date -->
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_date"
+                android:background="@drawable/ic_date"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/divider_location"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_date"
+                android:layout_alignStart="@+id/ic_date"
+                android:layout_below="@+id/divider_location"
+                android:layout_marginTop="20dp"
+                android:hint="Date"
+                android:layout_marginStart="50dp"
+
+                android:textSize="18sp"
+                android:layout_alignLeft="@+id/ic_date"
+                android:layout_marginLeft="50dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/text_date"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/divider_date"
+                />
+
+            <!--> time -->
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_time"
+                android:background="@drawable/ic_time"
+                android:layout_below="@id/divider_date"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_time"
+                android:layout_alignStart="@+id/ic_time"
+                android:layout_below="@+id/divider_date"
+                android:layout_marginTop="20dp"
+                android:hint="Time"
+                android:layout_marginStart="50dp"
+
+                android:textSize="18sp"
+                android:layout_alignLeft="@+id/ic_time"
+                android:layout_marginLeft="50dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/text_time"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/divider_time"
+                />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="Confirm" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">hackcoming</string>
+    <string-array name="Dates">
+
+        <item>2022-01-01</item>
+        <item>2022-01-02</item>
+        <item>2022-01-03</item>
+        <item>2022-01-04</item>
+        <item>2022-01-05</item>
+
+    </string-array>
+</resources>
